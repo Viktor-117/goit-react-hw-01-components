@@ -9,16 +9,23 @@ import {
 } from './Statistics.styled';
 
 export const Statistics = ({ title, stats }) => {
-  <StatisticsSection>
-    <SectionTitle>{title}</SectionTitle>
+  return (
+    <StatisticsSection>
+      <SectionTitle>{title}</SectionTitle>
 
-    <StatList>
-      {stats.map(({ id, label, percentage }) => {
-        <ListItem key={id}>
-          <Label>{label}</Label>
-          <Percentage>{percentage}</Percentage>
-        </ListItem>;
-      })}
-    </StatList>
-  </StatisticsSection>;
+      <StatList>
+        {stats.map(({ id, label, percentage }) => (
+          <ListItem key={id}>
+            <Label>{label}</Label>
+            <Percentage>{percentage}</Percentage>
+          </ListItem>
+        ))}
+      </StatList>
+    </StatisticsSection>
+  );
+};
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.array.isRequired,
 };

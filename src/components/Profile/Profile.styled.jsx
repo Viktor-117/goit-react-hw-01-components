@@ -6,6 +6,7 @@ export const Container = styled.div`
   padding-top: 20px;
   border: 1px solid #e7ecf2;
   border-radius: 5px;
+  background-color: #fff;
 `;
 
 export const Description = styled.div`
