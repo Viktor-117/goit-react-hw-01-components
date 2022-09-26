@@ -8,7 +8,7 @@ export const Card = styled.li`
   width: auto;
   margin-top: 20px;
   box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.75);
-  &: first-child {
+  :first-of-type {
     margin-top: 0;
   }
   background-color: #fff;
