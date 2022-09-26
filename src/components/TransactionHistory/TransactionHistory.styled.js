@@ -4,6 +4,7 @@ export const Table = styled.table`
   margin-top: 50px;
   width: 1000px;
   border-radius: 5px;
+  box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.75);
 `;
 
 export const TableHead = styled.th`
