@@ -29,4 +29,7 @@ export const TableCell = styled.td`
   text-align: center;
   padding: 10px;
   border: 0.5px solid #e5e5e5;
+  :first-of-type {
+    text-transform: capitalize;
+  }
 `;
