@@ -5,8 +5,15 @@ import { FriendListItem } from 'components/FriendListItem/FriendListItem';
 export const FriendList = ({ friends }) => {
   return (
     <List>
-      {friends.map(friend => {
-        return <FriendListItem key={friend.id} friend={friend} />;
+      {friends.map(({ id, avatar, name, isOnline }) => {
+        return (
+          <FriendListItem
+            key={id}
+            avatar={avatar}
+            name={name}
+            isOnline={isOnline}
+          />
+        );
       })}
     </List>
   );

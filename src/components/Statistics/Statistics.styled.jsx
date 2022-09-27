@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { randomColor } from 'components/utils/randomColor';
 
 export const StatisticsSection = styled.section`
   margin: 50px 0 0 0;
@@ -25,11 +26,6 @@ export const StatList = styled.ul`
   display: flex;
   flex-wrap: wrap;
 `;
-const randomCollor = () => {
-  return `rgba(${Math.floor(Math.random() * 256)}, ${Math.floor(
-    Math.random() * 256
-  )}, ${Math.floor(Math.random() * 256)})`;
-};
 
 export const ListItem = styled.li`
   display: flex;
@@ -37,7 +33,7 @@ export const ListItem = styled.li`
   align-items: center;
   width: 60px;
   padding: 15px 0;
-  background-color: ${randomCollor};
+  background-color: ${randomColor};
 `;
 
 export const Label = styled.span`

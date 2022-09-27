@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 
 export const Container = styled.div`
   width: 300px;
-  height: 300px;
   padding-top: 20px;
   border: 1px solid #e7ecf2;
   border-radius: 5px;

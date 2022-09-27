@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import { Card, Status, Avatar, Name } from './FriendListItem.styled';
 
-export const FriendListItem = ({ friend: { avatar, name, isOnline } }) => {
+export const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <Card>
-      <Status isOnline={isOnline}></Status>
+      <Status isOnline={isOnline} />
       <Avatar src={avatar} alt="User avatar" width="48" />
       <Name>{name}</Name>
     </Card>
@@ -12,9 +12,7 @@ export const FriendListItem = ({ friend: { avatar, name, isOnline } }) => {
 };
 
 FriendListItem.propTypes = {
-  friend: PropTypes.shape({
-    avatar: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    isOnline: PropTypes.bool.isRequired,
-  }),
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
 };
